@@ -1,11 +1,11 @@
-import { Analytics } from '@vercel/analytics/react'; // 1. TAMBAHKAN BARIS INI DI PALING ATAS
+import { Analytics } from '@vercel/analytics/next';
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="id">
       <body>
         {children}
-        <Analytics /> {/* 2. TAMBAHKAN BARIS INI DI SINI */}
+        <Analytics />
       </body>
     </html>
   );
