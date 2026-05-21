@@ -1,5 +1,5 @@
 import { Analytics } from '@vercel/analytics/react';
-import { SpeedInsights } from '@vercel/speed-insights/next'; // 1. TAMBAHKAN BARIS INI
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 export default function RootLayout({ children }) {
   return (
@@ -7,7 +7,7 @@ export default function RootLayout({ children }) {
       <body>
         {children}
         <Analytics />
-        <SpeedInsights /> {/* 2. TAMBAHKAN BARIS INI */}
+        <SpeedInsights />
       </body>
     </html>
   );
